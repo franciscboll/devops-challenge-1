@@ -7,7 +7,7 @@ Este repositorio contiene la infraestructura inicial del desafío técnico para 
 ## 📦 Estructura actual
 
 ```bash
-DEVOPS-SENIOR-CHALLENGE-1/
+DEVOPS-CHALLENGE-1/
 ├── backend.tf                # Configuración del backend remoto en S3
 ├── main.tf                   # Inclusión del módulo de S3
 ├── outputs.tf                # Variables de salida
