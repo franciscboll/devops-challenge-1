@@ -1,0 +1,22 @@
+# Archivos de estado (ya están en S3, no deben ir al repo)
+terraform.tfstate
+terraform.tfstate.backup
+
+# Directorios ocultos de Terraform
+.terraform/
+.terraform.lock.hcl
+
+# Archivos de salida o logs locales
+crash.log
+*.tfplan
+*.tfvars
+*.tfvars.json
+
+# Archivos del sistema o editores
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+*.log
