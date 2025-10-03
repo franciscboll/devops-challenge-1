@@ -1,6 +1,6 @@
-# DevOps Senior Challenge – Parte 1
+# DevOps Challenge – Parte 1
 
-Este repositorio contiene la infraestructura inicial del desafío técnico para una posición DevOps Senior.
+Este repositorio contiene la infraestructura inicial del desafío técnico para una posición DevOps. 
 
 ---
 
@@ -8,7 +8,7 @@ Este repositorio contiene la infraestructura inicial del desafío técnico para 
 
 ```bash
 DEVOPS-SENIOR-CHALLENGE-1/
-├── backend.tf                 # Configuración del backend remoto en S3
+├── backend.tf                # Configuración del backend remoto en S3
 ├── main.tf                   # Inclusión del módulo de S3
 ├── outputs.tf                # Variables de salida
 ├── variables.tf              # Definición de variables
