@@ -1,10 +1,36 @@
 # DevOps Challenge – Parte 1
 
-Este repositorio contiene la infraestructura inicial del desafío técnico para una posición DevOps. 
+## 📋 Descripción del desafío
+
+Este repositorio contiene la resolución de la **Parte 1** de un challenge técnico para la posición **DevOps Engineer**.
+
+### 🎯 Objetivo
+
+Diseñar y desplegar un entorno básico de infraestructura en la nube utilizando **Infraestructura como Código (IaC)**, cumpliendo con los siguientes requerimientos:
+
+- Un clúster de Kubernetes (preferentemente gestionado).
+- Un **balanceador de carga** que exponga un servicio HTTP dentro del clúster.
+- Un **bucket de almacenamiento en la nube**, con acceso público completamente restringido.
+- Todo implementado mediante código (IaC) y documentado.
+
+### ✅ Alcance
+
+Para cumplir con estos requisitos, se eligieron las siguientes tecnologías:
+```
+| Recurso                       | Implementación elegida                        |
+|------------------------------|-----------------------------------------------|
+| Cloud Provider                | AWS                                           |
+| IaC                          | Terraform                                     |
+| Kubernetes                   | Amazon EKS (servicio gestionado de Kubernetes)|
+| Balanceador de carga         | AWS ALB (Application Load Balancer)           |
+| Almacenamiento               | S3 bucket privado                             |
+| IaC State Backend            | S3 + bloqueo manual (sin DynamoDB Locking)    |
+```
+El repositorio contiene todo el código necesario para replicar el entorno en AWS, así como instrucciones paso a paso para su despliegue.
 
 ---
 
-## 📦 Estructura actual
+## 📦 Estructura del repositorio
 ```
 DEVOPS-CHALLENGE-1/
 ├── backend.tf                # Configuración del backend remoto (por ejemplo, S3 para estado)
