@@ -4,3 +4,8 @@ variable "aws_region" {
     default     =  "us-east-1"
 }
 
+variable "project_name" {
+  description = "Prefijo del nombre del proyecto para todos los recursos"
+  type        = string
+  default     = "as-challenge-fran"
+}

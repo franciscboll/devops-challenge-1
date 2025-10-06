@@ -2,7 +2,7 @@ module "s3_bucket" {
   source  = "terraform-aws-modules/s3-bucket/aws"
   version = "4.1.2"
 
-  bucket_prefix = "storage-as-challenge-fran-us-east-1-" 
+  bucket_prefix = "storage-${var.project_name}-${var.aws_region}-" 
   force_destroy = true
 
   block_public_acls       = true
@@ -11,9 +11,9 @@ module "s3_bucket" {
   restrict_public_buckets = true
 
   tags = {
-    Project     = "AS-Challenge-Fran"
-    Environment = "Dev"
-    Purpose     = "Storage"
-    Owner       = "Fran"
+    Project     = "as-challenge-fran"
+    Environment = "dev"
+    Purpose     = "storage"
+    Owner       = "fran"
   }
 }
