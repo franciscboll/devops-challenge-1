@@ -5,6 +5,7 @@ Este repositorio contiene la infraestructura inicial del desafío técnico para 
 ---
 
 ## 📦 Estructura actual
+```
 DEVOPS-CHALLENGE-1/
 ├── backend.tf                # Configuración del backend remoto (por ejemplo, S3 para estado)
 ├── main.tf                   # Configuración general: provider, versiones, etc.
@@ -15,9 +16,6 @@ DEVOPS-CHALLENGE-1/
 ├── eks.tf                    # (nuevo) Definición de recursos EKS: cluster, node groups, IAM roles, etc.
 └── README.md                 # Instrucciones, explicación del reto, pasos de ejecución
 ```
-
----
-
 ---
 
 ## ⚙️ Requisitos
