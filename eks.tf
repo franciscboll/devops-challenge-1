@@ -22,9 +22,9 @@ module "eks" {
   # Optional: Adds the current caller identity as an administrator via cluster access entry
   enable_cluster_creator_admin_permissions = true
 
-  vpc_id                   = "vpc-0895e8617560989aa"
-  subnet_ids               = ["subnet-0030ab39b795341e2", "subnet-06abae956858a70fa", "subnet-0471dbe93300b73e8"]
-  control_plane_subnet_ids = ["subnet-0030ab39b795341e2", "subnet-06abae956858a70fa", "subnet-0471dbe93300b73e8"]
+  vpc_id                   = module.vpc.vpc_id
+  subnet_ids               = module.vpc.private_subnets
+  control_plane_subnet_ids = module.vpc.private_subnets
 
   # EKS Managed Node Group(s)
   eks_managed_node_groups = {
